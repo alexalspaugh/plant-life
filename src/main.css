@@ -18,8 +18,11 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+    font-family: "Young Serif";
+    font-size: 48px;
+    line-height: 1.2;
     font-weight: 700;
+    margin-bottom: 8px;
 }
 
 nav {
@@ -67,3 +70,32 @@ main.open {
     justify-self: center;
     gap: 8px;
 }
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 56px;
+}
+
+section div {
+    width: 350px;
+}
+
+.content button {
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-color: #00b98d;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    align-self: flex-start;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #007e60;
+}
+
