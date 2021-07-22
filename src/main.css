@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Young Serif";
+    src: url(assets/youngserif.woff2), url(assest/youngserif.woff);
+}
+
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: url(assets/ibm-plex-mono.woff2), url(assest/ibm-plex-mono.woff);
+}
+
+body {
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2a2a2a;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: #00b98d;
+    color: #fff;
+
+    font-family: "Young Serif";
+    font-size: 24px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+nav a {
+    margin-left: 32px;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+main.open {
+    transform: translate(240px, 0);
+    transition: ease-in-out;
+}
