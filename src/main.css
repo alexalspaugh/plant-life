@@ -84,7 +84,7 @@ section div {
 }
 
 .content button {
-    margin-top: 16px;
+    margin-top: 24px;
     padding: 12px 24px;
     background-color: #00b98d;
     border-radius: 4px;
@@ -99,3 +99,17 @@ section div {
     background-color: #007e60;
 }
 
+.slides {
+    height: 475px;
+    position: relative;
+}
+
+.slides img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slides img:first-child {
+    z-index: 1;
+}
